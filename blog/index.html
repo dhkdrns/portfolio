@@ -28,7 +28,12 @@ div.redbox {
 </style>
 
 
- <nav><a href="/">Home</a> | <a href="/projects">Projects</a> | <a href="/media">Media</a> | <a href="/blog">Blog</a></nav>
+ <nav><a href="/">Home</a> |
+   <a href="/projects">Projects</a> |
+   <a href="/media">Media</a> |
+   <a href="/blog">Blog</a> |
+   <a href="/contact">contact</a>
+</nav>
 
 
 <div id="contents">
@@ -62,17 +67,17 @@ As our documents grow, we'll need to leverage more complex CSS selection syntax.
 }</h2>
 3.<i>The Child Selector</i>
 
-div>p {
+<h2>div>p {
     //css that only applies to direct child elements (no grand-children) of an element
     //in this case, all of the child paragraph elements of divs across the page
-}
+}</h2>
 4.<i>The Decendant Selector</i>
 
-div p {
+<h2>div p {
     //css that applies to all descendants of an element of a certain type
     //in this case, all paragraph elements of divs across the page (even if they're nested in
     //other elements, like spans or lists)
-}
+}</h2>
 These rules might seem like overkill right now, but they're extremely useful for when you have large stylesheets of CSS rules that apply across multiple pages. Speaking of which...
 </div class="new">
 </div>
