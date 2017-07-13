@@ -1,0 +1,16 @@
+div.new {font-family: helvetica;}
+
+
+#contents h1{
+background-color: skyblue;padding: 10px;font-size: 1.75em;
+
+}
+h2{
+background-color: gray;padding: 10px;font-size: 1em;
+
+}
+div.redbox {
+      width: auto;
+      margin: 5px;
+      border: 1px solid red;
+}
