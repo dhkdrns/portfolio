@@ -8,9 +8,21 @@
 </head>
 <body>
 <style>
+div.new {font-family: helvetica;}
+
+
 #contents h1{
 background-color: skyblue;padding: 10px;font-size: 1.75em;
 
+}
+h2{
+background-color: gray;padding: 10px;font-size: 1em;
+
+}
+div.redbox {
+      width: auto;
+      margin: 5px;
+      border: 1px solid red;
 }
 </style>
 
@@ -19,7 +31,7 @@ background-color: skyblue;padding: 10px;font-size: 1.75em;
 
 
 <div id="contents">
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+  <div class="redbox"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1></div class="redbox">
 
   <p>Suspendisse sodales, quam nec faucibus dapibus, augue massa
   sollicitudin nulla, ut mattis nisi tellus et nulla. In quis leo odio. Fusce nisi leo, varius a facilisis nec, lacinia
@@ -27,13 +39,42 @@ background-color: skyblue;padding: 10px;font-size: 1.75em;
   nascetur ridiculus mus.
 
 
-  <h1>Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada
-  fames</h1> ac turpis egestas. Donec purus urna, vehicula at sollicitudin at, pulvinar ac risus. Vestibulum lectus mi, mollis
+  <div class="redbox"><h1>Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada
+  fames</h1></div class="redbox"> ac turpis egestas. Donec purus urna, vehicula at sollicitudin at, pulvinar ac risus. Vestibulum lectus mi, mollis
   sit amet neque fermentum, sollicitudin hendrerit erat. Praesent et felis nisl. Nulla et finibus nulla, in rutrum mi.
   Nullam id eleifend elit, vitae efficitur nisi. Nulla mollis nisl at eros vestibulum mollis. Vestibulum laoreet at purus
   quis pretium. Ut ac gravida tortor. Suspendisse mollis semper metus ut lobortis.</p>
-</div>
 
+<br><div class="new"><h1>Complex CSS selectors</h1>
+<hr>
+As our documents grow, we'll need to leverage more complex CSS selection syntax. Here are a few important selectors to cherish and to keep:
+
+<p>1. <i>The Universal Selector</i></p>
+
+<h2><p>* {</p>
+    <p>//css that applies to every element</p>
+}
+</h2>
+2.<i>The Class Selector</i>
+
+<h2>div.container {//css that only applies to divs with a class of 'container'
+}</h2>
+3.<i>The Child Selector</i>
+
+div>p {
+    //css that only applies to direct child elements (no grand-children) of an element
+    //in this case, all of the child paragraph elements of divs across the page
+}
+4.<i>The Decendant Selector</i>
+
+div p {
+    //css that applies to all descendants of an element of a certain type
+    //in this case, all paragraph elements of divs across the page (even if they're nested in
+    //other elements, like spans or lists)
+}
+These rules might seem like overkill right now, but they're extremely useful for when you have large stylesheets of CSS rules that apply across multiple pages. Speaking of which...
+</div class="new">
+</div>
 <a href="mailto:junkemail@emailserver.com?Subject=Contact%20Form">Contact Me</a>
 
 </body>
