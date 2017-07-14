@@ -1,4 +1,11 @@
-div.new {font-family: helvetica;}
+html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Helvetica !important;
+}
+
+
 
 .container {
   position: relative;
