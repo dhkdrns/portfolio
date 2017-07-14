@@ -1,12 +1,37 @@
 div.new {font-family: helvetica;}
 
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-#contents h1{
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 100vw;
+}
+
+#header {
+  margin-top: 1.3em;
+}
+#sidebar {
+  float: left;
+  margin-left: 600px;
+}
+#contents
+{
+  float: left;
+  width: 600px;
+}
+h1{
 background-color: skyblue;padding: 10px;font-size: 1.75em;
 
 }
 h2{
-background-color: gray;padding: 10px;font-size: 1em;
+background-color: lightgray;padding: 10px;font-size: 1em;
 
 }
 div.redbox {
