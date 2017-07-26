@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+  <title>Wang Min | Sand Box</title>
+  <style>
+  #myDIV {
+      width: 300px;
+      height: 10px;
+      background: white;
+      -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 5s infinite;
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+      from {background-color: lightgrey;}
+      to {background-color: white;}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+      from {background-color: lightgrey;}
+      to {background-color: white;}
+  }
+
+  </style></head>
+<body>
+  <nav><a href="/">Home</a> |
+    <a href="/projects">Projects</a> |
+    <a href="/media">Media</a> |
+    <a href="/blog">Blog</a> |
+    <a href="/contact">Contact</a>
+</nav>
+<p>sand box page</p>
+<div id="sandbox">
+
+<div id="everything">
+  <div id="myDIV"></div>
+
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+<br><br>
+  <div id="myDIV"></div>
+   </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="sandbox.js"></script>
+
+</body>
+</html>
