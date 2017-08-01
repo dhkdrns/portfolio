@@ -1,8 +1,22 @@
 $('li').on('mouseover', function(){
-  $('li').addClass('highlighted')
+  $(this).addClass('highlighted')
 })
 $('li').on('mouseleave', function(){
-  $('li').removeClass('highlighted')
+  $(this).removeClass('highlighted')
+})
+
+$('h2').on('mouseover', function(){
+  $(this).addClass('highlighted')
+})
+$('h2').on('mouseleave', function(){
+  $(this).removeClass('highlighted')
+})
+
+$('#profile-pic').on('mouseover', function(){
+  $(this).addClass('grayscale')
+})
+$('#profile-pic').on('mouseleave', function(){
+  $(this).removeClass('grayscale')
 })
 
 
@@ -11,5 +25,5 @@ $('#profile-pic').on('click', function(){
 });
 
 $('#profile-pic').on('dblclick', function(){
-  $('#hidden-blurb').slideUp(); 
+  $('#hidden-blurb').slideUp();
 });
