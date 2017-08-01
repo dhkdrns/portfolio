@@ -4,14 +4,20 @@
       font-family: 'Helvetica';
     }
 
-
-
+.highlighted
+{color: red;}
 
 .container {
   position: relative;
   max-width: 960px;
   margin: 0 auto;
 }
+
+#hidden-blurb {
+  display:none;}
+
+#output
+
 
 #nav {
   position: fixed;
